@@ -1,10 +1,10 @@
 const express = require('express');
-const product = require('./services/product');
+const checkout = require('./services/checkout');
 const bodyParser = require('body-parser');
 const app = express();
 
 app.use(bodyParser.json());
-app.use('/product', product);
+app.use('/checkout', checkout);
 
 app.get('/', (req, res) => {
     res.send('Homepage');
