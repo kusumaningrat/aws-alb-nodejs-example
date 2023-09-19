@@ -1,0 +1,19 @@
+{
+  "name": "alb-aws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  },
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
