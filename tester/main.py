@@ -1,7 +1,7 @@
 from multiprocessing import Pool
 from requests import get,post
 
-URL = 'http://nodejs-alb-900999568.ap-southeast-1.elb.amazonaws.com/product'
+URL = 'http://nodejs-alb-621790754.ap-southeast-1.elb.amazonaws.com/product'
 
 def send_request(val):
     while True:
