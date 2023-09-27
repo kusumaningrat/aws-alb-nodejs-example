@@ -4,9 +4,12 @@ const path = require('path');
 const router = express.Router();
 
 router.get('/', (req, res) => {
+    let dumyData;   
     const customer = "Customer 1";
     const filePath = path.join(__dirname, '../data.json');
-    const dumyData = fs.readFileSync(filePath);
+    for (let i = 0; i < 1000; i++) {
+        dumyData = fs.readFileSync(filePath);
+    }
     const data = JSON.parse(dumyData);
     res.json({
         "message": 'Successfully checkout the product',
